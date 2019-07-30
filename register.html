@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#000000" />
+    <title>Boothly Bricks :: Welcome</title>
+    <script src="./jsQR.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ropa+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper teal">
+        <a href="#!" class="brand-logo" id="logo-font"
+          ><i class="material-icons">shopping_cart</i>Boothly Bricks</a
+        >
+        <a
+          href="#"
+          data-activates="main-nav"
+          class="button-collapse show right"
+        >
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="overlay-nav" data-transition="door" id="main-nav">
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </div>
+      <br />
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <form class="col s12" action="">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="user_name" type="text" class="validate" autofocus />
+              <label for="user_name">Username</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"></i>
+              <input id="password" type="password" class="validate" />
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix"></i>
+              <input id="password" type="password" class="validate" />
+              <label for="password">Confirm Password</label>
+            </div>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">phone</i>
+            <input id="icon_telephone" type="tel" class="validate" />
+            <label for="icon_telephone">Telephone</label>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="address" type="text" class="validate" />
+              <label for="address">Address</label>
+            </div>
+          </div>
+          <div class="row">
+              <div class="input-field col s6">
+                  <input id="appartmentNo" type="number" class="validate" />
+                  <label for="appartmentNo">Appartment No.</label>
+                  </div>
+            <div class="input-field col s6">
+              <input id="floorNo" type="number" class="validate" />
+              <label for="floorNo">Floor No.</label>
+            </div>
+          </div>
+          <input type="submit" value="Register" class="btn" />
+        </form>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#000000" />
+    <title>Boothly Bricks :: Welcome</title>
+    <script src="./jsQR.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ropa+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+
+
+  <body>
+
+
+    <nav>
+      <div class="nav-wrapper teal">
+        <a href="#!" class="brand-logo" id="logo-font"
+          ><i class="material-icons">shopping_cart</i>Boothly Bricks</a
+        >
+        <a
+          href="#"
+          data-activates="main-nav"
+          class="button-collapse show right"
+        >
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="overlay-nav" data-transition="door" id="main-nav">
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </div>
+      <br />
+    </nav>
+
+
+    <div class="container">
+      <p>Scan QR Code</p>
+    </div>
+
+
+    <div id="loadingMessage">
+      <div class="container center">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas id="canvas" hidden></canvas>
+    <div id="output" hidden>
+      <div id="outputMessage">No QR code detected.</div>
+      <div hidden><b>Data:</b> <span id="outputData">null</span></div>
+    </div>
+
+
+    <br />
+
+
+    <div class="container center">
+      <a onclick="addItemToCart()" class="btn" id="scan-btn">Scan</a>
+      <a class="btn" href="cart.html"
+        ><span class="badge white" id="items-num">0</span
+        ><i class="large material-icons">shopping_basket</i></a
+      >
+    </div>
+
+    
+    <script src="./js/qrCamera.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

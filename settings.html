@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#000000" />
+    <title>Boothly Bricks :: Welcome</title>
+    <script src="./jsQR.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ropa+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper teal">
+        <a href="#!" class="brand-logo" id="logo-font"
+          ><i class="material-icons">shopping_cart</i>Boothly Bricks</a
+        >
+        <a
+          href="#"
+          data-activates="main-nav"
+          class="button-collapse show right"
+        >
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="overlay-nav" data-transition="door" id="main-nav">
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </div>
+      <br />
+    </nav>
+    <br />
+    <br />
+    <div class="container center">
+      <div class="card-panel grey lighten-5 z-depth-1">
+        <div class="row">
+          <div class="col s12">
+            <i class="medium material-icons responsive-img">account_circle</i>
+            <!-- notice the "circle" class -->
+          </div>
+          <div class="col s12">
+            <div class="container">
+              <span class="black-text col s12">
+                Sikiro
+              </span>
+              <a href="changePassword.html" class="col s12 btn">Change Password</a>
+              <br>
+              <a href="paymentMethods.html" class="col s12 disabled btn">Payment Methods</a>
+              <p>(COD only..<br>Sorry, we are working on it)</p>
+              <a href="index.html" class="col s12 btn" id="logout-btn">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
